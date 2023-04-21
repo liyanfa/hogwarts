@@ -3,7 +3,7 @@
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : instance_method.py
-# @remark:
+# @remark:实例方法
 class Human:
     # 实例方法
     def study(self,course):

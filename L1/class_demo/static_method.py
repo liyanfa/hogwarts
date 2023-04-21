@@ -3,7 +3,7 @@
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : static_method.py
-# @remark:
+# @remark:静态方法
 class Human:
 
     # 定义静态方法
@@ -12,4 +12,4 @@ class Human:
         print("这是静态方法")
 
 #访问静态方法
-Human.grow_up()
+Human.grow_up() #这是静态方法

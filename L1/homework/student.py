@@ -1,48 +1,43 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2023/4/20 21:49
+# @Time    : 2023/4/21 17:44
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : student.py
 # @remark:
 class Student:
-    """
-    1.编写学员实体类，对应属性包含：学号、姓名、性别。
-    2.编写学员名单管理类，实现删除学员方法、查询学员方法
-    """
-
-    # 构造方法 -自动执行,直接返回该类的实例，如果不行则默认创建一个构造方法
-    def __init__(self, student_id, name, sex):
-        # 实例属性(变量)
-        self.student_id = student_id  # 通过self绑定到自身
+    def __init__(self, id, name, sex):
+        self.id = id
         self.name = name
         self.sex = sex
-        # print("这是构造方法")
 
+    def info(self):
+        """获取信息组装为列表"""
+        info=[self.id,self.name,self.sex]
+        return  info
 
 class StudentList:
     def __init__(self, student_list):
-        self.s_list = student_list
+        self.student_list = student_list
 
     def get(self, student_id):
-        """
-        根据 student_id 查询信息
-        """
-        print(s_list)
+        for student in self.student_list:
+            if student[0] == student_id:
+                print(f"学员信息获取成功：\n学号：{student[0]} 姓名：{student[1]} 性别：{student[2]}")
+                return student
+        return  print(f"学员信息获取失败,请检查学号是否正确")
 
     def delete(self, student_id):
-        """
-        根据 student_id 删除信息
-        """
-
+        for student in self.student_list:
+            if student[0]== student_id:
+                self.student_list.remove(student)
+                print(f"删除成功，删除后学员列表为：{self.student_list}")
+                return self.student_list
+        return print("删除失败,请检查学号是否正确")
 
 if __name__ == '__main__':
-    # 入参自己定义
-    s1 = Student(1001, "1号", "男")
-    s2 = Student(1002, "2号", "女")
-    s3 = Student(1003, "3号", "男")
-    # 初始化一个成员名单
-    s_list = StudentList([s1, s2, s3])
-    # 实现get()方法
-    s_list.get(s1.student_id)
-    # 实现delete
-    s_list.delete(s1.student_id)
+    s1 = Student("1001", "1号", "男").info()
+    s2 = Student("1002", "2号", "女").info()
+    s3 = Student("1003", "3号", "男").info()
+    student_list = StudentList([s1,s2,s3])
+    student_list.get("1001")
+    student_list.delete("1003")
