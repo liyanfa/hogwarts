@@ -127,6 +127,8 @@ def function_name([parameter_list]):
     [function_body]
 注意缩进：python通过严格的缩进来判断代码块
     函数体和注释相对def关键字保持一定的缩进，一般4个空格"""
+def fun_type(name:str="张三",age:int=18):
+    print(f"传入的参数为{name}{age}")
 
 def fun_a(a,b,c):
     """这是一个函数"""
@@ -199,8 +201,8 @@ def fun_1(b=0):
 fun_1()  #传入参数为：0
 
 #2、错误示例-默认值不放最后
-def fun_2(a,b=1,c):
-    print(f"传入参数为：{b}")
+# def fun_2(a,b=1,c):
+#     print(f"传入参数为：{b}")
 
 #3、错误示例，默认值为空列表
 #需要是不可变对象如数字/字符串/元祖，否则默认值会随着调用发生变化
@@ -236,3 +238,13 @@ def sum(a,b):
 res=sum(1,2)
 print(res) #(3, 1, 2)
 print(type(res)) #<class 'tuple'>
+
+"""作用域
+函数体外的是全局变量，函数内部的是局部变量"""
+
+a=1 #全局变量
+def num():
+    # global a #局部访问全局变量
+    b=1 ##局部变量
+    c=a+1
+print(a)
