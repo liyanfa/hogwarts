@@ -84,12 +84,12 @@ li.insert(1,"a")
 print(li) #[1, 'a', 2, 3]
 
 #缩小元素
-#4、pop(index)
+#4、pop()、pop(index)
 # 移除指定索引位置到元素；若索引值不正确则引发IndexError
 # pop() 默认移除最后一个元素
 li=[1,2,3]
-li.pop(2)
-print(li) #删除第三个元素，[1, 2]
+li.pop(2) #删除第三个元素
+print(li) #[1, 2]
 li.pop() #删除最后元素，[1]
 #2种异常情况
 print(li)
