@@ -2,7 +2,7 @@
 # @Time    : 2023/4/20 20:34
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_13.py
+# @File    : lambda_.py
 # @remark:匿名函数 lambda
 """"""
 import math

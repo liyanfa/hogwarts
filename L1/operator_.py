@@ -2,7 +2,7 @@
 # @Time    : 2023/4/18 11:50
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_6.py
+# @File    : operator_.py
 # @remark:运算符
 
 #1、算术运算符

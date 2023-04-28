@@ -2,7 +2,7 @@
 # @Time    : 2023/4/17 21:13
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_5.py
+# @File    : string_.py
 # @remark:字符串
 
 #不指定位置，按默认顺序

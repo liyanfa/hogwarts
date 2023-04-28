@@ -2,7 +2,7 @@
 # @Time    : 2023/4/19 19:13
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_8.py
+# @File    : list_.py
 # @remark: 常用数据结构-列表
 """"""
 """一、列表的定义

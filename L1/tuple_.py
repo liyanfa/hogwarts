@@ -2,7 +2,7 @@
 # @Time    : 2023/4/19 20:18
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_9.py
+# @File    : tuple_.py
 # @remark:数据结构-元祖
 """"""
 

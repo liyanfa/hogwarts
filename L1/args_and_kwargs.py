@@ -2,7 +2,7 @@
 # @Time    : 2023/4/20 20:10
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_12.py
+# @File    : args_and_kwargs.py
 # @remark: 函数进阶与参数处理
 """"""
 """一、可变参数

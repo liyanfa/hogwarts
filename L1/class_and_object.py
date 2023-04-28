@@ -2,7 +2,7 @@
 # @Time    : 2023/4/20 21:10
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_15.py
+# @File    : class_and_object.py
 # @remark:类与对象
 """"""
 """一、类的定义

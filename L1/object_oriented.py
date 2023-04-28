@@ -2,7 +2,7 @@
 # @Time    : 2023/4/20 20:56
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : p_14.py
+# @File    : object_oriented.py
 # @remark:面向对象概念
 """"""
 """一、面向对象是什么
