@@ -21,7 +21,14 @@ for i in range(count):
         random_int_list.append(ri)
 
 # 去重排序
-random_int_list=sorted(list(tuple(random_int_list)))
+# random_int_list_new=[]
+# for i in random_int_list:
+#     if i not in random_int_list_new:
+#         random_int_list_new.append(i)
+#     else:
+#         continue
+# random_int_list_new=sorted(random_int_list_new)
+random_int_list_new=sorted(list(set(random_int_list)))
 
-for ril in random_int_list:
+for ril in random_int_list_new:
     print(ril)
