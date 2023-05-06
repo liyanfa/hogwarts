@@ -44,8 +44,37 @@ def is_prime(n):
 输出：
 2 2 3 3 5
 """
-input_str = int(input())  # 输入一行字符串
-input_str_list=[i for i in range(2,input_str) if input_str%i==0]
-for i in sorted(input_str_list):
-    print(i)
+# def is_prime(n):
+#
+#     if n < 2:
+#         return False
+#     for i in range(2, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+# input_str = int(input())  # 输入一行字符串
+# input_str_list=[i for i in range(1,input_str) if input_str%i==0]
+# for i in range(2,input_str):
+
+# for i in sorted(input_str_list):
+#     print(i)
+#     if is_prime(i)==True:
+#         print(i)
+#     else:
+#         continue
+import math
+num = int(input())
+s = ''
+prime = 2
+while prime < math.sqrt(num)+1:
+    if num%prime != 0:
+        prime += 1
+    else:
+        num = num //prime
+        s += str(prime)+' '
+        prime = 2
+if num>=2:
+    s += str(num)+' '
+print(s)
+
 
