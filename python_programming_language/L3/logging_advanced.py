@@ -7,7 +7,7 @@
 """"""
 import os
 
-"""一、
+"""一、主要组成模块
 loggers：记录器 提供应用程序代码直接使用的接口
 handler：处理器 用于将日志记录发送到指定的目的位置
 filters：过滤器 提供更细粒度日志过滤功能，用于决定哪些日志记录将会被输出，其他的过滤
@@ -52,7 +52,7 @@ formatters
 # logger.critical('critical message')
 
 
-"""封装日志公共函数"""
+"""二、封装日志公共函数"""
 # import logging
 # def get_logger():
 #     # create logger
@@ -81,7 +81,7 @@ formatters
 # logger.error('error message')
 # logger.critical('critical message')
 
-"""日志文件配置 logging.conf
+"""三、日志文件配置 logging.conf
 例如：
 [loggers] # loggers 对象列表
         keys=root,main

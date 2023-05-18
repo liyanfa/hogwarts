@@ -1,0 +1,13 @@
+#这是备注
+languages:
+  - php
+  - java
+  - python
+book:
+  pyhton入门:
+    author: yanfa
+    age: 10
+    price: 99.99
+    sale: Null
+    available: True
+    date: 2023-05-15 19:30:00

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/4/21 23:08
 # @Author  : yanfali
-# @File    : p_3.py
+# @File    : polymorphism_and_super.py
 # @Software: 多态与super
 """"""
 """一、多态的概念

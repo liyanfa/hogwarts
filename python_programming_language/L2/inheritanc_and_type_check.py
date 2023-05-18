@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/4/21 22:49
 # @Author  : yanfali
-# @File    : p_2.py
+# @File    : inheritanc_and_type_check.py
 # @Software: 继承与类型检查
 """"""
 """一、继承的概念

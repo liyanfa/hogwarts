@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/4/21 22:16
 # @Author  : yanfali
-# @File    : p_1.py
+# @File    : property_.py
 # @Software: 封装 property
 
 """"""

@@ -1,10 +1,28 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2023/4/21 17:44
+# @Time    : 2023/5/17 14:35
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : student.py
 # @remark:
+# -*- coding: utf-8 -*-
+# @Time    : 2023/4/21 17:44
+# @Author  : yanfa
+# @user   : yanfa
+# @File    : student.py
+# @remark: 第一版，没实现太多功能
 class Student:
+    # 私有属性-成绩
+    __scores = "888"
+    # 数据访问getter
+    @property
+    def scores(self):
+        return self.__scores
+
+    # 数据操作setter
+    @scores.setter
+    def scores(self, value):
+        self.info().append(value)
+
     def __init__(self, id, name, sex):
         self.id = id
         self.name = name

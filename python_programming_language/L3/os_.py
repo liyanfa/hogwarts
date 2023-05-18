@@ -72,33 +72,33 @@ os.remove():    删除文件
 
 """三、os路径相关"""
 #1、返回绝对路径 os.path.abspath()
-print(os.path.abspath('./os_.py')) #/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py
+print(os.path.abspath('os_.py')) #/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py
 
 #2、返回文件名 os.path.basename()
-print(os.path.basename('./os_.py')) #os_.py
+print(os.path.basename('os_.py')) #os_.py
 
 #3、返回文件路径 os.path.dirname()
-print(os.path.dirname('/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py')) #o/Users/yanfa/PycharmProjects/hogwarts/L3
+print(os.path.dirname('/python_programming_language/L3/os_.py')) #o/Users/yanfa/PycharmProjects/hogwarts/L3
 
 #4、分割路径 os.path.split()
-print(os.path.split('/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py')) #('/Users/yanfa/PycharmProjects/hogwarts/L3', 'os_.py')
+print(os.path.split('/python_programming_language/L3/os_.py')) #('/Users/yanfa/PycharmProjects/hogwarts/L3', 'os_.py')
 
 #5、拼接路径 os.path.join()
-print(os.path.join('/Users/yanfa/PycharmProjects/hogwarts/L3','os_.py'))
+print(os.path.join('/python_programming_language/L3', 'os_.py'))
 
 #6、判断路径是否存在 os.path.exists()
-print(os.path.exists('/Users/yanfa/PycharmProjects/hogwarts/L3')) #True
+print(os.path.exists('/python_programming_language/L3')) #True
 
 #7、判断是否是目录os.path.isdir()
-print(os.path.isdir('/Users/yanfa/PycharmProjects/hogwarts/L3'))  #True
-print(os.path.isdir('/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py'))  #False
+print(os.path.isdir('/python_programming_language/L3'))  #True
+print(os.path.isdir('/python_programming_language/L3/os_.py'))  #False
 
 #8、判断是否是文件
-print(os.path.isfile('/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py')) #True
-print(os.path.isfile('/Users/yanfa/PycharmProjects/hogwarts/L3')) #False
+print(os.path.isfile('/python_programming_language/L3/os_.py')) #True
+print(os.path.isfile('/python_programming_language/L3')) #False
 
 #9、获取文件大小,字节数
-print(os.path.getsize('/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py')) #7455
+print(os.path.getsize('/python_programming_language/L3/os_.py')) #7455
 
 
 
