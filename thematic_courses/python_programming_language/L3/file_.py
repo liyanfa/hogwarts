@@ -37,7 +37,7 @@ readline(): 每次只读取一行内容
 
 """读操作实战"""
 #第一步：只读模式打开
-# f=open('/Users/yanfa/PycharmProjects/hogwarts/L3/data.txt','r',encoding='utf-8')
+# f=open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data.txt','r',encoding='utf-8')
 #第二步：读取文件内容
 # print(f.read()) #输出：hello\n world
 # print(f.read(1)) #输出：h
@@ -55,7 +55,7 @@ readline(): 每次只读取一行内容
 
 """with用法
 好处：会自动关闭文件"""
-# with open('/Users/yanfa/PycharmProjects/hogwarts/L3/data.txt','r',encoding='utf-8') as f:
+# with open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data.txt','r',encoding='utf-8') as f:
 #     print(f.read())
 # print(f.closed) #判断文件是否关闭，返回布尔 True
 
@@ -66,18 +66,18 @@ mode='r+',读写权限，替换原来的内容
 mode='a+',读写权限，追加内容
 """
 #w+ 有文件会清空再写入，无文件会创建再写入。
-# with open('/Users/yanfa/PycharmProjects/hogwarts/L3/data1.txt','w+',encoding='utf-8') as f:
+# with open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data1.txt','w+',encoding='utf-8') as f:
 #     print(f.write('china')) #输出：5 没文件会自动创建文件 文件内容为china
 
-# with open('/Users/yanfa/PycharmProjects/hogwarts/L3/data.txt','w+',encoding='utf-8') as f:
+# with open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data.txt','w+',encoding='utf-8') as f:
 #     print(f.write('china')) #输出：5 有文件会清空内容写入5个字符，文件内容变成china
 
 #r+ 替换原来的内容,不是完全替换，从文件头按长度进行替换
-# with open('/Users/yanfa/PycharmProjects/hogwarts/L3/data.txt','r+',encoding='utf-8') as f:
+# with open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data.txt','r+',encoding='utf-8') as f:
 #     print(f.write('xixixi')) #输出：6  原来hahahachina 现在xixixichina
 
 #a+ 文件尾追加
-# with open('/Users/yanfa/PycharmProjects/hogwarts/L3/data.txt','a+',encoding='utf-8') as f:
+# with open('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/data.txt','a+',encoding='utf-8') as f:
 #     print(f.write('world')) #输出：5  原来hello 现在helloworld
 
 """六、总结

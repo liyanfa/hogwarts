@@ -24,13 +24,13 @@ import os
 # print(os.name) #posix
 
 #2.获取系统环境变量信息
-# print(os.environ) #environ({'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', '__CFBundleIdentifier': 'com.jetbrains.pycharm', 'PYTHONPATH': '/Users/yanfa/PycharmProjects/hogwarts:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_display', 'SHELL': '/bin/zsh', 'PYTHONIOENCODING': 'UTF-8', 'USER': 'yanfa', 'TMPDIR': '/var/folders/2p/7kdv7_2x3978t76fh68n4nbh0000gn/T/', 'COMMAND_MODE': 'unix2003', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.PyJhEum5wY/Listeners', 'XPC_FLAGS': '0x0', 'PYTHONUNBUFFERED': '1', '__CF_USER_TEXT_ENCODING': '0x1F5:0x19:0x34', 'LOGNAME': 'yanfa', 'LC_CTYPE': 'zh_CN.UTF-8', 'XPC_SERVICE_NAME': 'application.com.jetbrains.pycharm.1007493.1008428', 'PWD': '/Users/yanfa/PycharmProjects/hogwarts/L3', 'PYCHARM_HOSTED': '1', 'HOME': '/Users/yanfa', 'PYCHARM_DISPLAY_PORT': '63342', 'SDKROOT': '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk', 'CPATH': '/usr/local/include', 'LIBRARY_PATH': '/usr/local/lib'})
+# print(os.environ) #environ({'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', '__CFBundleIdentifier': 'com.jetbrains.pycharm', 'PYTHONPATH': '/Users/yanfa/PycharmProjects/hogwarts:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend:/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm_display', 'SHELL': '/bin/zsh', 'PYTHONIOENCODING': 'UTF-8', 'USER': 'yanfa', 'TMPDIR': '/var/folders/2p/7kdv7_2x3978t76fh68n4nbh0000gn/T/', 'COMMAND_MODE': 'unix2003', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.PyJhEum5wY/Listeners', 'XPC_FLAGS': '0x0', 'PYTHONUNBUFFERED': '1', '__CF_USER_TEXT_ENCODING': '0x1F5:0x19:0x34', 'LOGNAME': 'yanfa', 'LC_CTYPE': 'zh_CN.UTF-8', 'XPC_SERVICE_NAME': 'application.com.jetbrains.pycharm.1007493.1008428', 'PWD': '/Users/yanfa/PycharmProjects/hogwarts/pytest_L3', 'PYCHARM_HOSTED': '1', 'HOME': '/Users/yanfa', 'PYCHARM_DISPLAY_PORT': '63342', 'SDKROOT': '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk', 'CPATH': '/usr/local/include', 'LIBRARY_PATH': '/usr/local/lib'})
 
 #3.获取指定名称的环境变量信息
 # print(os.getenv('PATH')) #/usr/bin:/bin:/usr/sbin:/sbin
 
 #4.执行系统指令
-# os.system('pwd') #/Users/yanfa/PycharmProjects/hogwarts/L3
+# os.system('pwd') #/Users/yanfa/PycharmProjects/hogwarts/pytest_L3
 
 """二、os目录相关
 os.getcwd():    获取当前目录
@@ -43,14 +43,14 @@ os.rename():    重命名目录
 os.remove():    删除文件
 """
 #1、os.getcwd():    获取当前目录
-# print(os.getcwd()) #/Users/yanfa/PycharmProjects/hogwarts/L3
+# print(os.getcwd()) #/Users/yanfa/PycharmProjects/hogwarts/pytest_L3
 
 #2、os.chdir():   切换目录
 # os.chdir('..')
 # print(os.getcwd())  #/Users/yanfa/PycharmProjects/hogwarts
 
 #3、os.listdir():   列出当前目录内容
-# print(os.listdir()) #['huawei', 'L3', 'L2', 'live', '.git', 'L1', 'main.py', '.idea']
+# print(os.listdir()) #['huawei', 'pytest_L3', 'pytest_L2', 'live_courses', '.git', 'pytest_L1', 'main.py', '.idea']
 
 #4、os.mkdir(): 创建空目录
 # os.mkdir('new')
@@ -72,33 +72,33 @@ os.remove():    删除文件
 
 """三、os路径相关"""
 #1、返回绝对路径 os.path.abspath()
-print(os.path.abspath('os_.py')) #/Users/yanfa/PycharmProjects/hogwarts/L3/os_.py
+print(os.path.abspath('os_.py')) #/Users/yanfa/PycharmProjects/hogwarts/pytest_L3/os_.py
 
 #2、返回文件名 os.path.basename()
 print(os.path.basename('os_.py')) #os_.py
 
 #3、返回文件路径 os.path.dirname()
-print(os.path.dirname('/python_programming_language/L3/os_.py')) #o/Users/yanfa/PycharmProjects/hogwarts/L3
+print(os.path.dirname('/python_programming_language/pytest_L3/os_.py')) #o/Users/yanfa/PycharmProjects/hogwarts/pytest_L3
 
 #4、分割路径 os.path.split()
-print(os.path.split('/python_programming_language/L3/os_.py')) #('/Users/yanfa/PycharmProjects/hogwarts/L3', 'os_.py')
+print(os.path.split('/python_programming_language/pytest_L3/os_.py')) #('/Users/yanfa/PycharmProjects/hogwarts/pytest_L3', 'os_.py')
 
 #5、拼接路径 os.path.join()
-print(os.path.join('/python_programming_language/L3', 'os_.py'))
+print(os.path.join('/python_programming_language/pytest_L3', 'os_.py'))
 
 #6、判断路径是否存在 os.path.exists()
-print(os.path.exists('/python_programming_language/L3')) #True
+print(os.path.exists('/python_programming_language/pytest_L3')) #True
 
 #7、判断是否是目录os.path.isdir()
-print(os.path.isdir('/python_programming_language/L3'))  #True
-print(os.path.isdir('/python_programming_language/L3/os_.py'))  #False
+print(os.path.isdir('/python_programming_language/pytest_L3'))  #True
+print(os.path.isdir('/python_programming_language/pytest_L3/os_.py'))  #False
 
 #8、判断是否是文件
-print(os.path.isfile('/python_programming_language/L3/os_.py')) #True
-print(os.path.isfile('/python_programming_language/L3')) #False
+print(os.path.isfile('/python_programming_language/pytest_L3/os_.py')) #True
+print(os.path.isfile('/python_programming_language/pytest_L3')) #False
 
 #9、获取文件大小,字节数
-print(os.path.getsize('/python_programming_language/L3/os_.py')) #7455
+print(os.path.getsize('/python_programming_language/pytest_L3/os_.py')) #7455
 
 
 
