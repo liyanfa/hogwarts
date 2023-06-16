@@ -1,0 +1,17 @@
+book:
+  java入门:
+    author: lily
+    available: false
+    data: 2018-05-20
+    price: 30
+    repertory: null
+  python人们:
+    author: lily
+    available: true
+    data: 2018-07-27
+    price: 25.5
+    repertory: 20
+languages:
+- Php
+- Java
+- Go
