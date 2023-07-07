@@ -3,7 +3,7 @@
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : pytest_mark_for_skip_and_xfail.py
-# @remark: mark: 跳过skip和预期失败xfail
+# @remark:  pytest设置跳过、预期失败用例
 
 """
 mark.skip mark.xfail是pytest的内置标签，可以处理一些特殊的测试用例，不能成功的测试用例

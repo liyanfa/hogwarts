@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2023/6/6 21:02
+# @Time    : 2023/6/28 16:39
 # @Author  : yanfa
 # @user   : yanfa 
-# @File    : conftest.py
-# @remark: 公共配置
-
-
+# @File    : main.py
+# @remark:
 def pytest_collection_modifyitems(items):
     """
     测试用例收集完成时，将收集的用例名name和用例标识nodeid的中文信息显示在控制台上

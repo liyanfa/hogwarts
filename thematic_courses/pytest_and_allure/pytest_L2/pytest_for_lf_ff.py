@@ -3,7 +3,7 @@
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : pytest_for_lf_ff.py
-# @remark: 命令行参数-使用缓存状态
+# @remark: 五、pytest测试用例调度与运行lf/ff
 
 """"""
 """

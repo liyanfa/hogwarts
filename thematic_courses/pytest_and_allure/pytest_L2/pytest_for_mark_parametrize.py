@@ -3,7 +3,7 @@
 # @Author  : yanfa
 # @user   : yanfa 
 # @File    : pytest_for_mark_parametrize.py
-# @remark:
+# @remark: pytest参数化用例
 
 # 简单示例
 # def inc(x):

@@ -2,13 +2,26 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_yaml/data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_yaml/func" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_yaml/testcase" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9 virtualenv at ~/PycharmProjects/hogwarts/myenv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (hogwarts)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_excel" />
+        <option value="$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_yaml" />
+        <option value="$MODULE_DIR$/thematic_courses/pytest_and_allure/pytest_L3/pytest_for_csv" />
+      </list>
+    </option>
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="pytest" />
